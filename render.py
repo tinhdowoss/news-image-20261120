@@ -107,6 +107,21 @@ briefs = [
     ("GLOBAL · EDUCATION", ["UNESCO presents", "early education report"], "UNESCO"),
     ("UKRAINE · CHILDREN", ["1,144 children killed", "or hurt through Oct."], "UNICEF · 2026 verified count"),
     ("SPACE · EUROPE / JAPAN", ["Mercury mission", "nears orbit"], "ESA · Insertion due Saturday"),
+    ("GLOBAL", ["WFP briefs on its", "2027 food aid outlook"], "UN Geneva"),
+    ("AFGHANISTAN", ["UN Women warns of", "deepening rights crisis"], "UN Geneva"),
+    ("CHINA", ["China holds one-year", "loan prime rate at 3%"], "KBC · Daily calendar"),
+    ("UNITED KINGDOM", ["UK consumer mood", "improves in November"], "IMF · GfK survey"),
+    ("UNITED KINGDOM", ["UK retail sales", "rise in October"], "IMF · Market monitor"),
+    ("GERMANY", ["German producer", "prices rise in October"], "KBC · Daily calendar"),
+    ("MIDDLE EAST", ["Oil exports slip", "in early November"], "AP · Rystad estimate"),
+    ("UNITED STATES", ["DOJ seeks dismissal", "of Alaska election suit"], "Associated Press"),
+    ("AUSTRALIA", ["Auditors get new", "AI quality guidance"], "AUASB"),
+    ("UNITED STATES", ["IT failures fuel", "holiday flight worries"], "Associated Press"),
+    ("SINGAPORE", ["Princess Aiko’s", "official visit continues"], "Singapore MFA · 17–21 Nov"),
+    ("ITALY", ["ATP Finals continue", "in Turin"], "ATP · 15–22 Nov"),
+    ("FRANCE", ["French business", "confidence rises"], "KBC · Daily calendar"),
+    ("GLOBAL CLIMATE", ["25 countries pledge", "fossil transition plans"], "Carbon Brief · COP31"),
+    ("SOUTH ASIA", ["Pakistan sends minister", "to Delhi dialogue"], "Pakistan foreign ministry"),
 ]
 
 field = ["#234c63", "#7d4037", "#4d6656", "#46577e"]
@@ -168,21 +183,22 @@ for i, (index, sign, place, color) in enumerate(features):
 draw.line((34, 693, 990, 693), fill=ink, width=2)
 label(34, 706, "THE DAY IN BRIEF", 17, red)
 regions = [
-    ("EUROPE & MIDDLE EAST", [7, 9, 19, 20]),
-    ("ASIA & THE AMERICAS", [10, 11, 12, 14, 15]),
-    ("AFRICA & GLOBAL", [13, 16, 17, 18]),
+    ("EUROPE", [7, 19, 24, 25, 26, 32, 33]),
+    ("ASIA & OCEANIA", [12, 14, 22, 23, 29, 31, 35]),
+    ("AMERICAS & MIDDLE EAST", [9, 10, 11, 15, 27, 28, 30]),
+    ("AFRICA & GLOBAL", [13, 16, 17, 18, 20, 21, 34]),
 ]
+assert sorted([i for i, *_ in features] + [i for _, col in regions for i in col]) == list(range(len(briefs)))
 for col, (region, indices) in enumerate(regions):
-    x = 34 + col*322
+    x = 34 + col*241
     label(x, 744, region, 13, field[col])
     for row, index in enumerate(indices):
-        _, headline, source = briefs[index]
-        y = 769 + row*40
-        lines(x, y, [" ".join(headline)], 14, 307)
-        label(x,y+17,source,11,muted)
-        draw.line((x,y+34,x+292,y+34), fill=rule)
+        _, headline, _ = briefs[index]
+        y = 764 + row*30
+        lines(x, y, headline, 12, 225)
+        draw.line((x,y+28,x+224,y+28), fill=rule)
 
 draw.line((34, 981, 990, 981), fill=ink, width=2)
 label(34, 993, "REPORTING CUT  ·  20 NOV 2026, 16:45 UTC", 14, muted)
-label(682, 993, "25 STORIES  ·  ORIGINAL ILLUSTRATIONS", 13, muted)
+label(690, 993, f"{len(leads) + len(briefs)} STORIES  ·  SOURCES IN README", 13, muted)
 canvas.save(Path(__file__).with_name("edition.png"), optimize=True)

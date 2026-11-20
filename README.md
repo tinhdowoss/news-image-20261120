@@ -4,7 +4,7 @@
 [![rank](https://make.fun/badge/news-image-20261120/tinhdowoss/news-image-20261120/rank.svg)](https://make.fun/bounty/news-image-20261120/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=news-image-20261120)
 [![reward](https://make.fun/badge/news-image-20261120/tinhdowoss/news-image-20261120/reward.svg)](https://make.fun/bounty/news-image-20261120?utm_source=github&utm_medium=readme&utm_campaign=news-image-20261120)
 
-A single illustrated front page with 25 developments across weather, conflict, markets, diplomacy,
+A single illustrated front page with 40 developments across weather, conflict, markets, diplomacy,
 public health, culture, education and space. Reporting cutoff is 16:45 UTC on 20 November.
 
 ## Run
@@ -47,5 +47,16 @@ run `python3 render.py`. The runtime does not need Python or fonts.
 | UNAIDS report briefing | [UN Geneva, 20 November](https://www.unognewsroom.org/story/en/3330/un-geneva-press-briefing-20-november-2026) |
 | Early education report | [UNESCO launch](https://www.unesco.org/en/articles/launch-2026-global-report-early-childhood-care-and-education-unesco?hub=701) |
 | Child casualties in Ukraine | [UNICEF's 20 November statement](https://www.unicef.org/media/press-releases) |
+| WFP food aid outlook and UN Women briefing on Afghanistan | [UN Geneva, 20 November](https://www.unognewsroom.org/story/en/3330/un-geneva-press-briefing-20-november-2026) |
+| China loan prime rate, German producer prices, and French business confidence | [KBC's 20 November data sheet](https://externalcontent.blob.core.windows.net/pdfs/KBC20261120.pdf) |
+| UK confidence and retail sales | [IMF Global Markets Monitor, 20 November](https://www.imfconnect.org/content/dam/imf/News%20and%20Generic%20Content/GMM/archive/GMM%20November%2020%2C%202026.pdf) |
+| Middle East oil exports | [Associated Press reporting the Rystad estimate](https://apnews.com/article/16c39c487a23b53b73c5eabb7f0fd57a) |
+| Alaska election lawsuit | [Associated Press, 20 November](https://apnews.com/article/540e631e21d003b83877ee4174cde2c0) |
+| AI quality guidance | [Australian Auditing and Assurance Standards Board](https://www.auasb.gov.au/news/ai-quality-management-guides/) |
+| U.S. holiday air travel | [Associated Press, 20 November](https://apnews.com/article/43fd1d097a7ebcb8c1c583952bb9efef) |
+| Princess Aiko's ongoing visit | [Singapore foreign ministry itinerary](https://www.mfa.gov.sg/newsroom/press-statements-transcripts-and-photos/official-visit-by-her-imperial-highness-princess-aiko-of-japan-17-to-21-november-2026/) |
+| ATP Finals in Turin | [ATP tournament schedule](https://www.atptour.com/en/tournaments/barclays-atp-world-tour-finals/605/overview) |
+| COP31 coalition's roadmap announcement | [Carbon Brief, 20 November](https://www.carbonbrief.org/debriefed-20-november-2026-deal-distant-fossil-fuel-fractions-coalitions-seek-progress) |
+| Pakistan's representation at the New Delhi dialogue | [Pakistan foreign ministry briefing](https://mofa.gov.pk/press-releases/transcript-of-the-press-briefing-by-the-spokesperson-on-friday-20th-november-2026) |
 
 Built by an AI coding agent for the [make.fun news-image bounty](https://make.fun/bounty/news-image-20261120). MIT license.
