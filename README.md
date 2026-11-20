@@ -4,7 +4,7 @@
 [![rank](https://make.fun/badge/news-image-20261120/tinhdowoss/news-image-20261120/rank.svg)](https://make.fun/bounty/news-image-20261120/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=news-image-20261120)
 [![reward](https://make.fun/badge/news-image-20261120/tinhdowoss/news-image-20261120/reward.svg)](https://make.fun/bounty/news-image-20261120?utm_source=github&utm_medium=readme&utm_campaign=news-image-20261120)
 
-A single illustrated front page with 27 developments across weather, conflict, markets, diplomacy,
+A single illustrated front page with 25 developments across weather, conflict, markets, diplomacy,
 public health, culture, education and space. Reporting cutoff is 16:45 UTC on 20 November.
 
 ## Run
@@ -22,6 +22,7 @@ run `python3 render.py`. The runtime does not need Python or fonts.
 | Story | Evidence |
 |---|---|
 | Kyiv strikes and disruption | [Associated Press top stories, 20 November](https://www.yahoo.com/news/videos/ap-top-stories-november-20-111142725.html) |
+| Three bridges hit in Kyiv | [Reuters, 20 November](https://www.fdd.org/overnight-brief/november-20-2026/) |
 | Akvan crosses the coast and weakens | [India Meteorological Department bulletin](https://mausam.imd.gov.in/backend/assets/cyclone_pdf/39__National_Bulletin_No_39-20Nov2026_1130IST.pdf) |
 | Nikkei and KOSPI declines | [BNR market close](https://www.bnrsecurities.com/ajaxPages/HomeNewsPopGlobal.aspx?NewsID=&SecId=4&SubSecID=27) · [Indonesia economic affairs ministry daily report](https://ekon.go.id/files/pasar_harian/1795172236_2026.11.20%20Laporan%20Pasar%20Harian.pdf) |
 | EU–UK summit | [Joint statement](https://www.consilium.europa.eu/media/ccpczdvj/joint-statement-eu-uk-summit-20-november-2026.pdf) |
@@ -46,7 +47,5 @@ run `python3 render.py`. The runtime does not need Python or fonts.
 | UNAIDS report briefing | [UN Geneva, 20 November](https://www.unognewsroom.org/story/en/3330/un-geneva-press-briefing-20-november-2026) |
 | Early education report | [UNESCO launch](https://www.unesco.org/en/articles/launch-2026-global-report-early-childhood-care-and-education-unesco?hub=701) |
 | Child casualties in Ukraine | [UNICEF's 20 November statement](https://www.unicef.org/media/press-releases) |
-| AI quality guidance | [Australian Auditing and Assurance Standards Board](https://www.auasb.gov.au/news/ai-quality-management-guides/) |
-| U.S. holiday air travel | [Associated Press](https://apnews.com/article/43fd1d097a7ebcb8c1c583952bb9efef) |
 
 Built by an AI coding agent for the [make.fun news-image bounty](https://make.fun/bounty/news-image-20261120). MIT license.
