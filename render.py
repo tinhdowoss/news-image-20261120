@@ -75,39 +75,53 @@ leads = [
 ]
 
 briefs = [
-    ("EUROPE", ["EU and UK meet", "in Brussels"], "EU Council"),
-    ("OCEANIA · EAST ASIA", ["Albanese meets Xi", "in Shenzhen"], "Australian PM"),
-    ("AFRICA · AID", ["$52m for learning", "in crisis zones"], "ECW · Includes South Sudan"),
-    ("MIDDLE EAST", ["Saudi Arabia reports", "new Houthi launches"], "Associated Press"),
-    ("CARIBBEAN", ["Haiti operation", "continues in Martissant"], "Vant Bèf Info"),
-    ("NORTH AMERICA", ["U.S. tech shares", "slide at the open"], "Associated Press"),
-    ("SOUTHEAST ASIA", ["Myanmar rejects", "Rohingya ruling"], "Associated Press"),
-    ("TÜRKİYE · CLIMATE", ["COP31 draft omits", "fossil fuels"], "Associated Press · Draft text"),
-    ("SPACE SCIENCE", ["Mercury mission", "nears orbit"], "ESA · Insertion due Saturday"),
+    ("EUROPE · DIPLOMACY", ["EU and UK meet", "in Brussels"], "EU Council"),
+    ("TÜRKİYE · CLIMATE", ["COP31 draft omits", "fossil fuels"], "AP · Draft text"),
+    ("OCEANIA · DIPLOMACY", ["Albanese meets Xi", "in Shenzhen"], "Australian PM"),
+    ("ASIA · RIGHTS", ["Myanmar rejects", "Rohingya ruling"], "AP"),
+    ("MIDDLE EAST · SECURITY", ["Saudi Arabia reports", "Houthi launches"], "AP"),
+    ("CARIBBEAN · SECURITY", ["Haiti police operate", "in Martissant"], "Vant Bèf Info"),
+    ("AFRICA · AID", ["$52m for children", "in three crisis zones"], "ECW · Includes South Sudan"),
+    ("ASIA · SOUTH AMERICA", ["Philippines and Chile", "sign trade agreement"], "DZRH"),
+    ("EUROPE · SECURITY", ["Russian missile", "comes down in Poland"], "AP"),
+    ("EUROPE · LABOR", ["Italy strike disrupts", "schools and transit"], "AP"),
+    ("MIDDLE EAST · SECURITY", ["Iraqi troops deploy", "south of Baghdad"], "AP"),
+    ("NORTH AMERICA · MARKETS", ["U.S. tech shares", "slide at the open"], "AP"),
+    ("BRAZIL · CULTURE", ["Brazil marks Black", "Awareness Day"], "Brazil Culture Ministry"),
+    ("JAPAN · ECONOMY", ["October inflation", "reaches 2.3%"], "Japan Statistics Bureau"),
+    ("SOUTH SUDAN · CLIMATE", ["U.N. reports on first", "drought action plan"], "UN South Sudan"),
+    ("SOUTH ASIA · DIPLOMACY", ["ASEAN chief’s visit", "to Pakistan closes"], "ASEAN · Itinerary"),
+    ("UNITED STATES · ECONOMY", ["Consumer sentiment", "rises to 51.5"], "Michigan survey · Bloomberg"),
+    ("SOUTH AFRICA · HEALTH", ["Measles surveillance", "report released"], "NICD"),
+    ("GLOBAL · HEALTH", ["UNAIDS presents", "World AIDS Day report"], "UN Geneva"),
+    ("GLOBAL · EDUCATION", ["UNESCO presents", "early education report"], "UNESCO"),
+    ("UKRAINE · CHILDREN", ["1,144 children killed", "or hurt through Oct."], "UNICEF · 2026 verified count"),
+    ("SPACE · EUROPE / JAPAN", ["Mercury mission", "nears orbit"], "ESA · Insertion due Saturday"),
+    ("AUSTRALIA · TECHNOLOGY", ["Audit board spotlights", "AI quality guidance"], "AUASB"),
+    ("UNITED STATES · TRAVEL", ["IT breakdowns fuel", "holiday flight worries"], "AP"),
 ]
 
-draw.rectangle((0, 0, 1024, 151), fill=ink)
-label(40, 27, "WORLD NEWS", 24, "#b2d7ca")
-label(40, 62, "Friday, 20 November 2026", 60, paper, "Georgia Bold")
-label(42, 165, "THE DAY’S LEADING STORIES", 18, red)
+draw.rectangle((0, 0, 1024, 114), fill=ink)
+label(40, 17, "WORLD NEWS", 20, "#b2d7ca")
+label(40, 45, "Friday, 20 November 2026", 55, paper, "Georgia Bold")
 for i, (region, art, headline, detail, source) in enumerate(leads):
     x = 40 + i * 320
-    scene(x, 197, art)
-    label(x, 335, region, 15, red)
-    lines(x, 361, headline, 33, 305, face="Georgia Bold")
-    lines(x, 438, detail, 23, 305, face="Arial")
-    label(x, 492, source, 14, muted)
+    scene(x, 130, art)
+    label(x, 265, region, 14, red)
+    lines(x, 286, headline, 32, 305, face="Georgia Bold")
+    lines(x, 355, detail, 20, 305, face="Arial")
+    label(x, 400, source, 13, muted)
 
-draw.line((40, 524, 984, 524), fill=ink, width=2)
-label(40, 541, "AROUND THE WORLD", 19, red)
+draw.line((40, 424, 984, 424), fill=ink, width=2)
+label(40, 437, "AROUND THE WORLD", 18, red)
 for i, (region, headline, source) in enumerate(briefs):
-    x, y = 40 + i%3*320, 579 + i//3*130
-    draw.rectangle((x, y, x+307, y+118), fill="#eee8d9")
-    label(x+11, y+10, region, 15, red)
-    lines(x+11, y+34, headline, 25, 287)
-    label(x+11, y+94, source, 15, muted)
+    x, y = 40 + i%4*239, 463 + i//4*85
+    draw.rectangle((x, y, x+227, y+78), fill="#eee8d9")
+    label(x+9, y+6, region, 11, red)
+    lines(x+9, y+22, headline, 19, 210)
+    label(x+9, y+64, source, 11, muted)
 
-draw.line((40, 973, 984, 973), fill=ink, width=2)
-label(40, 991, "REPORTING CUT  ·  20 NOV 2026, 15:00 UTC", 15, muted)
-label(683, 991, "ORIGINAL EDITORIAL ILLUSTRATIONS", 14, muted)
+draw.line((40, 980, 984, 980), fill=ink, width=2)
+label(40, 991, "REPORTING CUT  ·  20 NOV 2026, 16:45 UTC", 15, muted)
+label(683, 991, "27 STORIES  ·  ORIGINAL ILLUSTRATIONS", 14, muted)
 canvas.save(Path(__file__).with_name("edition.png"), optimize=True)
